@@ -7,7 +7,7 @@ export default {
     title: 'Organisme / Tabbar',
     component: Tabbar,
     parameters: {
-        componentSubtitle: "La Tabbar est utlisé sur le site pour permettre au viewers de ce naviguer d’un onglet a un autre en connaissant sa position dans l’application. La page suivis est selectionner dès l’ouverture du site.",
+        componentSubtitle: "La Tabbar est utlisé sur le site pour permettre aux viewers de naviguer d’un onglet à un autre en visualisant sa position dans l’application grâce à un changement de couleur. L’icone suivis est visible ( sélectionnée ) dans une autre couleur dès l’ouverture du site.",
     },
     decorators: [withKnobs]
 };
