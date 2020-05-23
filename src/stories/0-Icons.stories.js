@@ -7,7 +7,7 @@ export default {
   title: 'Atoms / Icons',
   component: TabbarIcons,
   parameters: {
-    componentSubtitle: "La démontration de cette page du premier button vaut pour les trois autres suivants.",
+    componentSubtitle: "Les icons de cette page proviennent de React Material Icons en fonction de la signification voulue ",
     backgrounds: [
       { name: 'default', value: '#000000', default: true }
     ]

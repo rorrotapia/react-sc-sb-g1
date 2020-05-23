@@ -6,7 +6,7 @@ export default {
   title: 'Molecules / Tabs',
   component: TabbarButton,
   parameters: {
-    componentSubtitle: "La démontration de cette page du premier button vaut pour les trois autres suivants.",
+    componentSubtitle: "Les Tabs de la Tabbars sont utlisés pour naviguer sur le site. C’est grâce à eux que l’ulisateur peut se déplacer au clic. Cette démontration est valable pour les trois autres Tabs suivants suivant les mêmes caractéristiques.",
   },
   decorators: [withKnobs]
 
