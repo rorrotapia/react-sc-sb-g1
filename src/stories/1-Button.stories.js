@@ -1,18 +1,33 @@
 import React from 'react';
-import { action } from '@storybook/addon-actions';
-import { Button } from '@storybook/react/demo';
+import { withKnobs, text, boolean } from "@storybook/addon-knobs";
+import TabbarButton, {colors} from "../ui/molecules/TabbarButton";
 
 export default {
-  title: 'Button',
-  component: Button,
+  title: 'Molecules / Tabs',
+  component: TabbarButton,
+  parameters: {
+    componentSubtitle: "La démontration de cette page du premier button vaut pour les trois autres suivants.",
+  },
+  decorators: [withKnobs]
+
 };
 
-export const Text = () => <Button onClick={action('clicked')}>Hello Button</Button>;
+export const Demonstration = () => <TabbarButton
+    disabled={boolean("Disabled", false)}
+    icon={text("Icon", "favorite")}
+    text={text("Texte", "Suivis")}
+    color={colors.white}/>
 
-export const Emoji = () => (
-  <Button onClick={action('clicked')}>
-    <span role="img" aria-label="so cool">
-      😀 😎 👍 💯
-    </span>
-  </Button>
-);
+export const Simulation = () => <TabbarButton
+    disabled={boolean("Disabled", false)}
+    icon={text("Icon", "favorite")}
+    text={text("Texte", "Suivis")}
+    color={colors.purple}/>;
+
+Simulation.story = {
+  parameters: {
+    docs: {
+      storyDescription: `Au click de l’utilsateur sur un “button” de la Tabbar, le contenu “button” change de couleur.`,
+    },
+  },
+};

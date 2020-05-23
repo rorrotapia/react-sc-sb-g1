@@ -1,11 +1,17 @@
 import React from "react";
-import Badge, { colors } from "./ui/atoms/Badge";
+import Tabbar , { colors } from "./ui/organisme/Tabbar";
 
-export default function App() {
-      return (
-            <div className="App">
-                <Badge text="IRL" color={colors.purple}/>
-                <Badge text="IRL" color={colors.grey}/>
-            </div>
-      );
+const AppWrapper = styled.div`
+  width: 100vw;
+  height: 744px;
+  background-color: black;
+  padding: 16px;
+`
+
+export default function App () {
+    return (
+        <AppWrapper>
+            <Tabbar color={colors.purple}/>
+        </AppWrapper>
+    )
 }
